@@ -1,0 +1,230 @@
+/*!
+Theme Name:   Storefront Child
+Theme URI:    https://woocommerce.com/storefront/
+Author:       Automattic
+Author URI:   https://woocommerce.com/
+Version:      3.5.0
+Tested up to: 5.6.0
+License:      GNU General Public License v2 or later
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  storefront-child
+Template: storefront
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	background : url(images/bg.jpg);
+	background-size: 1400px auto;
+	background-position: top center;
+	font-family: 'Catamaran', sans-serif;
+}
+
+header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    padding: 18px 0px;
+    z-index: 99;
+    transition: .3s;
+}
+header.fixed {
+    background: linear-gradient(45deg, #778391, #636f7b);
+    box-shadow: 0px 0px 3px #000;
+    padding: 5px 0px;
+}
+.hero-area {
+    position: relative;
+}
+.hero-area > img {
+    width: 100%;
+    background: #737f8c;
+    height: 777px;
+}
+.wave-shape {
+    top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transform: rotate(180deg);
+    width: 100%;
+    overflow: hidden;
+    height: 110px;
+}
+.hero-area .wave-shape {
+    top: initial;
+    bottom: 0;
+    transform: rotate(0deg);
+    position: absolute;
+}
+.river-wave {
+    background: url(images/wave.svg) repeat-x;
+    position: absolute;
+    top: 0;
+    width: 6400px;
+    height: 110px;
+    animation: river-wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+.river-wave:nth-of-type(2) {
+    top: 0;
+    animation: river-wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    opacity: 1;
+}
+@keyframes river-wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+.container {
+    max-width: 1080px;
+    width: 100%;
+}
+.logo {
+    padding: 9px 0px 0px;
+}
+.logo img {
+    height: 37px;
+    display: inline-block;
+}
+#mega-menu-wrap-primary {
+    background: transparent;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    padding: 9px 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    height: auto;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.active-menu > a.mega-menu-link {
+    padding: 9px 42px;
+    font-weight: 700;
+    margin-left: 10px;
+    background: linear-gradient(45deg, #24baec, #247fee);
+    border-radius: 50px;
+    transition: .3s;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.active-menu > a.mega-menu-link:before, .default-btn:before {
+    position: absolute;
+    content: "";
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 0px;
+    transition: .3s;
+    opacity: 0;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.active-menu > a.mega-menu-link:hover {
+    background: transparent;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.active-menu > a.mega-menu-link:hover:before, .default-btn:hover:before {
+    opacity: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-color: #fff;
+}
+.banner-overlay {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    max-width: 1220px;
+    bottom: 135px;
+    padding: 0px 15px;
+}
+.overlay-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.overlay-left {
+    width: 55%;
+}
+.overlay-left img {
+    max-width: 625px;
+    width: 100%;
+}
+.overlay-right {
+    width: 45%;
+    padding: 50px 5px 0px;
+    position: relative;
+}
+.overlay-right h3 {
+    font-size: 49px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 0px;
+}
+.overlay-right h2 {
+    font-weight: 700;
+    font-size: 49px;
+    color: #22b2f1;
+    line-height: 1.1;
+}
+.overlay-right:before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 23px;
+    border: 4px solid rgb(255 255 255 / 62%);
+    border-radius: 50%;
+    top: 4px;
+    left: 9px;
+}
+.overlay-right p {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 19px;
+    max-width: 90%;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 36px;
+}
+.default-btn {
+    background: linear-gradient(45deg, #1dc2f4, #1f7ef4);
+    text-decoration: none !important;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 18px 54px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 50px;
+    position: relative;
+    transition: .3s;
+}
+.default-btn:hover {
+	color: #fff;
+	background: transparent;
+}
+a:focus {
+	outline: none !important;
+}
