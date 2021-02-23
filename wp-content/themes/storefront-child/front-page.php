@@ -12,7 +12,7 @@
 
 get_header(); ?>
 
-<div class="services animatedParent">
+<div class="services animatedParent" id="services">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -47,7 +47,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<div class="maintenence-service animatedParent">
+<div class="maintenence-service animatedParent" id="maintenence">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -114,7 +114,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="pricing-plan animatedParent">
+<div class="pricing-plan animatedParent" id="pricing-plan">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">

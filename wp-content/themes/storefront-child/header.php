@@ -31,8 +31,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-3">
-				<div class="logo d-none">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<div class="logo">
+					<a href="#top<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img src="<?php echo ot_get_option('logo'); ?>" title="<?php bloginfo('name'); ?>">
 					</a>
 				</div>
@@ -46,7 +46,7 @@
 	</div>
 </header>
 
-<div class="hero-area">
+<div class="hero-area" id="top">
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner1.jpg">
 	<div class="banner-overlay">
 		<div class="overlay-box animatedParent">

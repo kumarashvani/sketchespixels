@@ -74,6 +74,11 @@
 				jQuery("header").removeClass("fixed");
 			}
 		});
+		jQuery("#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link, .logo a").click(function(e){
+            var id    =    jQuery(this).attr("href");
+            jQuery("html, body").animate({scrollTop:jQuery(id).offset().top-60},500);
+            e.preventDefault();            
+        });
 	});
 </script>
 
