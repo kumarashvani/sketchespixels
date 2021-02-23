@@ -15,7 +15,7 @@ Template: storefront
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-	background : url(images/bg.jpg);
+	background : url(images/bg2.jpg);
 	background-size: 1400px auto;
 	background-position: top center;
 	font-family: 'Catamaran', sans-serif;
@@ -176,6 +176,7 @@ header.fixed {
     width: 45%;
     padding: 50px 5px 0px;
     position: relative;
+    overflow: hidden;
 }
 .overlay-right h3 {
     font-size: 49px;
@@ -305,7 +306,7 @@ a:focus {
 }
 .maintenence-service {
     position: relative;
-    padding: 57px 0px;
+    padding: 57px 0px 140px;
     background: #eff0f2 url(images/dot.png) no-repeat;
     background-position: bottom -280px right;
 }
@@ -353,6 +354,9 @@ a:focus {
 .service-box.box2 .icon-box:hover {
     background: linear-gradient(45deg, #16b2ef, #1b82f1);
 }
+.service-box.box2:hover .icon-box {
+    background: linear-gradient(45deg, #16b2ef, #1b82f1);
+}
 .service-box.box2 .icon-box:after {
     display: none;
 }
@@ -384,4 +388,250 @@ a:focus {
 }
 .mb-20 {
     margin-bottom: 20px;
+}
+.pricing-plan {
+    position: relative;
+    padding: 85px 0px;
+}
+.price-box {
+    position: relative;
+}
+.price-header h4 {
+    margin: 0px;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+.price-header h1 {
+    color: #fff;
+    font-size: 78px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    line-height: 1;
+}
+.price-header h1 span {
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    left: -19px;
+    top: 11px;
+}
+.price-header h5 {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.price-header {
+    position: relative;
+    padding: 30px 15px 45px;
+    text-align: center;
+    background: linear-gradient(45deg, #24bef1, #1178f2);
+    border-radius: 30px 30px 0px 0px;
+}
+.active .price-header {
+    padding: 30px 15px 20px;
+    background: linear-gradient(45deg, #8793a1, #5d6b75);
+}
+.content-price {
+    position: relative;
+    padding: 38px 20px;
+    background: #eff0f2;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.content-price ul {
+    position: relative;
+    margin: 0px 0px 39px 55px;
+}
+.content-price ul li {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    list-style-type: none;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+.content-price ul li:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: -36px;
+    background: url(images/check.png) no-repeat;
+    top: -1px;
+    background-size: 22px;
+}
+.purchase-btn .btn-gray {
+    margin: 0px;
+    padding: 15px 50px;
+}
+.pricing-plan .section-title {
+    margin-bottom: 15px;
+}
+.active .content-price ul li:before {
+    background: url(images/check-w.png) no-repeat;
+    background-size: 22px;
+}
+.active .content-price ul li {
+    color: #fff;
+}
+.active .content-price {
+    padding: 19px 20px 38px;
+    background: #6e7a88;
+}
+.active .content-price li {
+    margin-bottom: 11px;
+}
+.active .content-price ul {
+    margin-bottom: 26px;
+}
+.creative-blog {
+    position: relative;
+    padding: 82px 0px 70px;
+}
+.creative-blog .section-title {
+    margin-bottom: 10px;
+}
+.blog-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 28px;
+    background: #fff;
+    border-radius: 50px;
+    margin-bottom: 60px;
+}
+.blog-thumb {
+    width: 40%;
+    position: relative;
+}
+.blog-thumb img {
+    border-radius: 30px;
+}
+.blog-content {
+    width: 60%;
+    padding: 8px 0px 0px 25px;
+}
+.date-blog {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 10px;
+}
+.date-blog i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.blog-content h4 {
+    font-size: 24px;
+    margin: 1px 0px 13px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.blog-content > a {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    color: #1eb0f3;
+}
+.connect-us {
+    position: relative;
+    margin: 70px 0px 0px;
+    padding: 50px 170px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(15deg, #20c0f3, #1e7ef4);
+    border-radius: 40px;
+}
+.connect-us h2 {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 0px;
+    color: #fff;
+}
+.connect-us .connect-us-btn {
+    width: 325px;
+    padding: 20px 0px 0px;
+}
+.connect-us .connect-us-btn a {
+    width: 100%;
+    text-align: center;
+}
+footer {
+    position: relative;
+    padding: 91px 0px;
+}
+.footer-box h3 {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.footer-menu {
+    margin: 0px;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-menu li {
+    position: relative;
+    width: 50%;
+    margin-bottom: 5px;
+}
+.footer-menu li a {
+    color: #cccccc;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 15px;
+}
+.footer-menu li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-box {
+    position: relative;
+    margin-bottom: 42px;
+}
+.copyright a img {
+    height: 37px;
+}
+.copyright {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #818b97;
+    padding: 55px 0px 5px;
+}
+.copy-right nav a {
+    display: inline-block;
+    color: #22bff1;
+    background: #fff;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 0px 0px 0px 13px;
+    font-size: 20px;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+}
+.copy-right {
+    padding: 0px 73px 0px 0px;
+}
+.top-footer {
+    background: #6e7a88;
 }

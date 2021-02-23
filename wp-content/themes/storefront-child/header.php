@@ -16,6 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/animations.css" type="text/css">
 
 <?php wp_head(); ?>
 </head>
@@ -48,15 +49,15 @@
 <div class="hero-area">
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner1.jpg">
 	<div class="banner-overlay">
-		<div class="overlay-box">
-			<div class="overlay-left">
+		<div class="overlay-box animatedParent">
+			<div class="overlay-left animated bounceInUp">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner2.png">
 			</div>
 			<div class="overlay-right">
-				<h3>Sketches & Pixels</h3>
-				<h2>Quality Services & Support</h2>
-				<p>Our strong support team, means you can focus on growing our business.</p>
-				<a href="#" class="default-btn">Our Pricing</a>
+				<h3 class="animated bounceInLeft delay-1000">Sketches & Pixels</h3>
+				<h2 class="animated bounceInLeft delay-1500">Quality Services & Support</h2>
+				<p class="animated bounceInLeft delay-2000">Our strong support team, means you can focus on growing our business.</p>
+				<a href="#" class="default-btn animated bounceInLeft delay-2500">Our Pricing</a>
 			</div>
 		</div>
 	</div>

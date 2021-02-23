@@ -12,16 +12,16 @@
 
 get_header(); ?>
 
-<div class="services">
+<div class="services animatedParent">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="section-title text-center">
-					<h2><span>High Quality Services</span>Services We Do</h2>
+					<h2 class="animated bounceIn"><span>High Quality Services</span>Services We Do</h2>
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="service-box">
+				<div class="service-box animated bounceInUp delay-250">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon1.png">
 					</div>
@@ -29,7 +29,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="service-box">
+				<div class="service-box animated bounceInUp delay-500">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon2.png">
 					</div>
@@ -37,7 +37,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="service-box">
+				<div class="service-box animated bounceInUp delay-750">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon3.png">
 					</div>
@@ -47,17 +47,17 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<div class="maintenence-service">
+<div class="maintenence-service animatedParent">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="section-title title2 hide-circle d-flex flex-wrap align-items-end justify-content-between position-relative">
-					<h2><span>What we do.</span>WordPress Maintenence Services</h2>
-					<a href="#" class="btn-gray">Explore More</a>
+					<h2 class="animated bounceInUp"><span>What we do.</span>WordPress Maintenence Services</h2>
+					<a href="#" class="btn-gray animated bounceInUp delay-250">Explore More</a>
 				</div>
 			</div>
 			<div class="col-sm-4 mb-20">
-				<div class="service-box box2">
+				<div class="service-box box2 animated bounceInUp delay-250">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon4.png">
 					</div>
@@ -66,7 +66,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4 mb-20">
-				<div class="service-box box2">
+				<div class="service-box box2 animated bounceInUp delay-500">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon5.png">
 					</div>
@@ -75,7 +75,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4 mb-20">
-				<div class="service-box box2">
+				<div class="service-box box2 animated bounceInUp delay-750">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon6.png">
 					</div>
@@ -84,7 +84,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4 mb-20">
-				<div class="service-box box2">
+				<div class="service-box box2 animated bounceInUp delay-1000">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon7.png">
 					</div>
@@ -93,7 +93,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4 mb-20">
-				<div class="service-box box2">
+				<div class="service-box box2 animated bounceInUp delay-1250">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon8.png">
 					</div>
@@ -102,7 +102,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-sm-4 mb-20">
-				<div class="service-box box2">
+				<div class="service-box box2 animated bounceInUp delay-1500">
 					<div class="icon-box">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon9.png">
 					</div>
@@ -114,29 +114,133 @@ get_header(); ?>
 	</div>
 </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="pricing-plan animatedParent">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="section-title text-center">
+					<h2 class="animated bounceInUp"><span>Choose Best Plan</span>Pricing Plans</h2>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="price-box animated bounceInUp delay-250">
+					<div class="price-header">
+						<h5>Maintenance Plan</h5>
+						<h1><span>$</span>85</h1>
+						<h4>Per Month</h4>
+					</div>
+					<div class="content-price">
+						<ul>
+							<li>Weekly reports</li>
+							<li>Weekly plugin, theme & core file updates</li>
+							<li>Emergency support</li>
+							<li>24/7 uptime monitoring</li>
+							<li>Cloud backups (1x daily)</li>
+							<li>Google Analytics integration</li>
+							<li>6 months</li>
+						</ul>
+						<div class="purchase-btn text-center">
+							<a href="#" class="btn-gray">Purchase</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="price-box active animated bounceInUp delay-500">
+					<div class="price-header">
+						<h5>Performance Plan</h5>
+						<h1><span>$</span>197</h1>
+						<h4>Per Month</h4>
+					</div>
+					<div class="content-price">
+						<ul>
+							<li>Weekly reports</li>
+							<li>Weekly plugin, theme & core file updates</li>
+							<li>Emergency support</li>
+							<li>24/7 uptime monitoring</li>
+							<li>Google Analytics integration</li>
+							<li>Unlimited 24/7 website edits</li>
+							<li>Security optimization</li>
+							<li>Priority support</li>
+							<li>Speed optimization</li>
+							<li>WP Rocket premium plugin</li>
+							<li>WP Smush Pro premium plugin</li>
+							<li>Cloud backups (4x daily)</li>
+							<li>Mobile & tablet optimization</li>
+							<li>Complete malware removal</li>
+						</ul>
+						<div class="purchase-btn text-center">
+							<a href="#" class="default-btn">Purchase</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="price-box animated bounceInUp delay-750">
+					<div class="price-header">
+						<h5>Protection  Plan</h5>
+						<h1><span>$</span>147</h1>
+						<h4>Per Month</h4>
+					</div>
+					<div class="content-price">
+						<ul>
+							<li>Weekly reports</li>
+							<li>Weekly plugin, theme & core file updates</li>
+							<li>Emergency support</li>
+							<li>24/7 uptime monitoring</li>
+							<li>Cloud backups (1x daily)</li>
+							<li>Google Analytics integration</li>
+							<li>6 months</li>
+						</ul>
+						<div class="purchase-btn text-center">
+							<a href="#" class="btn-gray">Purchase</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-			<?php
-			while ( have_posts() ) :
-				the_post();
+<!-- <div class="creative-blog">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="section-title text-center">
+					<h2><span>Creative Blogs</span>WordPress Blogs</h2>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="blog-box">
+					<div class="blog-thumb">
+						<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blog2.jpg"></a>
+					</div>	
+					<div class="blog-content">
+						<div class="date-blog"><i class="fas fa-calendar-alt"></i> 13 Aug 2020</div>
+						<h4>Popular design news of the week: February 8, 2021 - February 14, 2021</h4>
+						<a href="#">Read Blog</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="blog-box">
+					<div class="blog-thumb">
+						<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blog1.jpg"></a>
+					</div>	
+					<div class="blog-content">
+						<div class="date-blog"><i class="fas fa-calendar-alt"></i> 13 Aug 2020</div>
+						<h4>Top Ten Tips for Website Optimizing Image in 2021</h4>
+						<a href="#">Read Blog</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 text-center">
+				<a href="#" class="btn-gray">Expllore More</a>
+			</div>
+		</div>
+	</div>
+</div> -->
 
-				do_action( 'storefront_page_before' );
-
-				get_template_part( 'content', 'page' );
-
-				/**
-				 * Functions hooked in to storefront_page_after action
-				 *
-				 * @hooked storefront_display_comments - 10
-				 */
-				do_action( 'storefront_page_after' );
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 do_action( 'storefront_sidebar' );
